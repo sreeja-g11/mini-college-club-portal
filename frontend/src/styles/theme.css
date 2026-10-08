@@ -1,0 +1,131 @@
+/* ---- Design tokens ---------------------------------------------------------------- */
+:root {
+  --paper: #f6f2ea;
+  --paper-2: #efe8db;
+  --card: #ffffff;
+  --ink: #17231f;
+  --ink-2: #44524d;
+  --muted: #6f7c77;
+  --line: #e4dccd;
+  --line-strong: #d3c8b4;
+
+  --forest: #14322b;
+  --forest-2: #1d4339;
+  --forest-3: #2a5a4c;
+  --coral: #e85d3a;
+  --coral-dark: #c94a2a;
+  --coral-soft: #fde5dc;
+  --mustard: #f4b740;
+  --mustard-soft: #fdf1d4;
+  --mint: #5cc8a4;
+  --mint-soft: #ddf4ea;
+  --sky: #dbe8fb;
+  --danger: #c2372b;
+  --danger-soft: #fbe3e0;
+  --ok: #1f8a63;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 1px 2px rgba(23, 35, 31, 0.05), 0 6px 18px -10px rgba(23, 35, 31, 0.18);
+  --shadow-lg: 0 24px 60px -20px rgba(20, 50, 43, 0.35);
+
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--forest-3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--coral-dark);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--coral) 55%, transparent);
+  outline-offset: 2px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.82rem;
+}
+
+.block {
+  display: block;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral-dark);
+  margin-bottom: 6px;
+}
