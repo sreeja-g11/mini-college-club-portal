@@ -98,10 +98,10 @@ Stop it with `docker compose down`. Your data stays in the `db-data` volume.
 
 | Image | Link |
 |---|---|
-| Backend | https://hub.docker.com/r/YOUR_DOCKERHUB_USERNAME/mini-club-portal-backend |
-| Frontend | https://hub.docker.com/r/YOUR_DOCKERHUB_USERNAME/mini-club-portal-frontend |
+| Backend | https://hub.docker.com/r/sreejag11/mini-club-portal-backend |
+| Frontend | https://hub.docker.com/r/sreejag11/mini-club-portal-frontend |
 
-To run the published images without building, put `DOCKERHUB_USER=YOUR_DOCKERHUB_USERNAME` in `.env`, then run:
+To run the published images without building, put `DOCKERHUB_USER=sreejag11` in `.env`, then run:
 
 ```bash
 docker compose pull backend frontend
