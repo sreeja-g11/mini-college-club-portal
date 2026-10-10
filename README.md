@@ -6,6 +6,20 @@ creates clubs and events, posts announcements and tracks participation.
 
 **Stack:** React + CSS (frontend) · Spring Boot + MySQL (backend) · Docker
 
+
+## 🌐 Live demo
+
+| | Link |
+|---|---|
+| **Website** | https://mini-college-club-portal.vercel.app |
+| **Backend API** | https://mini-club-portal-api.onrender.com/api/health |
+
+Log in with **admin@clubportal.edu / Admin@123** or **student@clubportal.edu / Student@123**.
+
+> The backend runs on Render's free plan. It sleeps after 15 minutes of no use, so the first login can take about a minute.
+> Demo data resets whenever the backend restarts.
+
+
 ![Student dashboard](docs/screenshots/student-dash.png)
 
 ---
